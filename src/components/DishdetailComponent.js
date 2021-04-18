@@ -34,7 +34,7 @@ class CommentForm extends Component{
     return(
         <div>
         <Button  color="light" onClick = {this.toggleModal}> 
-        <span className ="fa fa-edit fa-lg"></span>
+        <span className ="fa fa-edit fa-lg"git p></span>
              Submit Comment</Button>
         <Modal isOpen ={this.state.isModalOpen} toggle={this.toggleModal}>
                 <ModalHeader toggle ={ this.toggleModal}>
