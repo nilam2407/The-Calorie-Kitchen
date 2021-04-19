@@ -1,5 +1,5 @@
 import * as ActionTypes from './ActionTypes';
-
+import {DISHES} from "../shared/dishes";
 
 //function that creat action for addcomment include all data field in params
 export const addComment = (dishId1, rating1, author1, comment1) => ({
@@ -14,4 +14,31 @@ export const addComment = (dishId1, rating1, author1, comment1) => ({
             comment: comment1
         }
 
+});
+
+//fetchdishes is thunk
+export const fetchDishes = () =>(dispatch) => {
+    dispatch(dishesLoading(true));
+
+
+    setTimeout(()=>{
+         dispatch(addDishes(DISHES));
+    },2000);
+}
+
+export const dishesLoading =() =>({
+    //this function return action 
+
+    type:ActionTypes.DISHES_LOADING
+
+});
+
+export const dishesFailed =(errmess) => ({
+    type: ActionTypes.DISHES_FAILED,
+    payload :errmess
+});
+
+export const addDishes =(dishes) => ({
+    type: ActionTypes.ADD_DISHES,
+    payload:dishes
 });
