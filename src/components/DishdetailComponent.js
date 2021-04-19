@@ -26,6 +26,7 @@ class CommentForm extends Component{
     
 
             handleSubmit(values){
+                this.props.addComment(this.props.disId, values.rating,values.name,values.comment);
                 console.log('current state is : '+ JSON.stringify(values));
                 alert('current state is :' +JSON.stringify(values));
             }
@@ -136,7 +137,7 @@ else
 }
  
 
- function RenderComments({comments}) {
+ function RenderComments({comments,addComment,dishId}) {
    
     if (comments != null) {
 
@@ -160,7 +161,7 @@ else
                 <ul className="list-unstyled">
                     {list}
                 </ul>
-                <CommentForm/>
+                <CommentForm disId={dishId} addComment = {addComment}/>
                 </div>
             )
         }
@@ -228,7 +229,11 @@ const Dishdetail = (props) =>{
             <RenderDish dish ={props.dish}/>
             </div>
             <div className ="col-12 col-md m-1">
-                <RenderComments comments ={props.comments}/>
+                <RenderComments comments ={props.comments}
+                addComment ={props.addComment}
+                dishId ={props.dish.id}
+                //dish id needed to add id to state
+                />
             </div>
            
             
