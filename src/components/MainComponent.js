@@ -9,7 +9,7 @@ import Home from "./HomeComponent";
 import { Switch,Route,Redirect, withRouter } from 'react-router-dom';
 import {connect } from 'react-redux';
 import { addComment,fetchDishes} from '../redux/ActionCreators';
-
+import {actions} from 'react-redux-form';
 
   //before connecting to store you need to define 
   // we derive all state from redux store
@@ -24,8 +24,9 @@ import { addComment,fetchDishes} from '../redux/ActionCreators';
 
   const mapDispatchToProps = (dispatch) => ({
       addComment: (dishId,rating,author,comment) => dispatch(addComment(dishId,rating,author,comment)),
-      fetchDishes:() =>{dispatch(fetchDishes())}
-  });
+      fetchDishes:() =>{dispatch(fetchDishes())},
+      resetFeedbackForm: () => {dispatch(actions.reset('feedback'))}
+    });
 
   //dispatch (addcommnet()) recive a updated action object to sent to store.which will update state. this dispatch function will be used
   //as props in below main component
@@ -79,7 +80,7 @@ class Main extends Component {
         <Route exact path="/menu" component={()=> <Menu dishes= {this.props.dishes}/>} />
          <Route path="/menu/:dishId" component={DishWithId}/>
          {/* redirect element mean if exact path will not match then application will reidrect to home page */}
-          <Route exact path="/contactus" component={Contact}/>
+          <Route exact path="/contactus" component={() => <Contact resetFeedbackForm = {this.props.resetFeedbackForm}/>}/>
           <Route path="/aboutus" component ={()=> < Aboutus leaders ={this.props.leaders}/>}/>
         <Redirect to ="/home"/> 
       </Switch>
