@@ -4,19 +4,62 @@ import {baseUrl} from "../shared/baseUrl";
 
 
 //function that creat action for addcomment include all data field in params
-export const addComment = (dishId1, rating1, author1, comment1) => ({
+export const addComment = (comment) => ({
     //return plain js object
     //every action function must have type and import strint type here
         type: ActionTypes.ADD_COMMENT,
-        payload:{
-            //add whatever data you need to send to action object, paramas are assigned to properties.
-            dishId : dishId1,
-            rating: rating1,
-            author: author1,
-            comment: comment1
-        }
+        payload:comment
+        // {
+        //     //add whatever data you need to send to action object, paramas are assigned to properties.
+        //     // dishId : dishId1,
+        //     // rating: rating1,
+        //     // author: author1,
+        //     // comment: comment1
+        // }
 
 });
+
+export const postComment = (dishId, rating, author, comment) =>(dispatch)=> {
+    const newComment = {
+        dishId : dishId,
+        rating: rating,
+        author:author,
+        comment: comment
+
+    };
+    newComment.date = new Date().toISOString ();
+    return fetch(baseUrl + 'comments',{
+        method: 'POST',
+        body: JSON.stringify(newComment),
+        headers:{
+            'content-Type' : 'application/json'
+        },
+        credentials:'same-origin'
+    })
+    .then(response => {
+        if(response.ok){
+            return response;
+        }
+        else {
+            var error = new Error('Error' + response.status + ':' + response.statusText);
+            error.response = response;
+            throw error;
+        }
+    },
+
+     error => {
+       throw error;
+    }
+    )
+    .then(response => response.json())
+    .then(response => dispatch(addComment(response)))
+    .catch(error => { console.log('Post Comments',error.message);
+        alert('your comment could not be posted/nError:' + error.message);
+    });
+    
+};
+
+
 
 //fetchdishes is thunk
 export const fetchDishes = () =>(dispatch) => {
