@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/react-confusion/static/css/main.49f03181.chunk.css",
-    "main.js": "/react-confusion/static/js/main.0835e9b8.chunk.js",
-    "main.js.map": "/react-confusion/static/js/main.0835e9b8.chunk.js.map",
-    "runtime-main.js": "/react-confusion/static/js/runtime-main.dd586649.js",
-    "runtime-main.js.map": "/react-confusion/static/js/runtime-main.dd586649.js.map",
-    "static/css/2.486c1f53.chunk.css": "/react-confusion/static/css/2.486c1f53.chunk.css",
-    "static/js/2.b8d1114d.chunk.js": "/react-confusion/static/js/2.b8d1114d.chunk.js",
-    "static/js/2.b8d1114d.chunk.js.map": "/react-confusion/static/js/2.b8d1114d.chunk.js.map",
-    "static/js/3.528ec898.chunk.js": "/react-confusion/static/js/3.528ec898.chunk.js",
-    "static/js/3.528ec898.chunk.js.map": "/react-confusion/static/js/3.528ec898.chunk.js.map",
+    "main.css": "/react-confusion/static/css/main.a036ed4d.chunk.css",
+    "main.js": "/react-confusion/static/js/main.bece17ec.chunk.js",
+    "main.js.map": "/react-confusion/static/js/main.bece17ec.chunk.js.map",
+    "runtime-main.js": "/react-confusion/static/js/runtime-main.e54d5acf.js",
+    "runtime-main.js.map": "/react-confusion/static/js/runtime-main.e54d5acf.js.map",
+    "static/css/2.143f3cc4.chunk.css": "/react-confusion/static/css/2.143f3cc4.chunk.css",
+    "static/js/2.c2d47cdd.chunk.js": "/react-confusion/static/js/2.c2d47cdd.chunk.js",
+    "static/js/2.c2d47cdd.chunk.js.map": "/react-confusion/static/js/2.c2d47cdd.chunk.js.map",
+    "static/js/3.8ebcd9fb.chunk.js": "/react-confusion/static/js/3.8ebcd9fb.chunk.js",
+    "static/js/3.8ebcd9fb.chunk.js.map": "/react-confusion/static/js/3.8ebcd9fb.chunk.js.map",
     "index.html": "/react-confusion/index.html",
-    "static/css/2.486c1f53.chunk.css.map": "/react-confusion/static/css/2.486c1f53.chunk.css.map",
-    "static/css/main.49f03181.chunk.css.map": "/react-confusion/static/css/main.49f03181.chunk.css.map",
-    "static/js/2.b8d1114d.chunk.js.LICENSE.txt": "/react-confusion/static/js/2.b8d1114d.chunk.js.LICENSE.txt",
+    "static/css/2.143f3cc4.chunk.css.map": "/react-confusion/static/css/2.143f3cc4.chunk.css.map",
+    "static/css/main.a036ed4d.chunk.css.map": "/react-confusion/static/css/main.a036ed4d.chunk.css.map",
+    "static/js/2.c2d47cdd.chunk.js.LICENSE.txt": "/react-confusion/static/js/2.c2d47cdd.chunk.js.LICENSE.txt",
     "static/media/font-awesome.min.css": "/react-confusion/static/media/fontawesome-webfont.f691f37e.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.dd586649.js",
-    "static/css/2.486c1f53.chunk.css",
-    "static/js/2.b8d1114d.chunk.js",
-    "static/css/main.49f03181.chunk.css",
-    "static/js/main.0835e9b8.chunk.js"
+    "static/js/runtime-main.e54d5acf.js",
+    "static/css/2.143f3cc4.chunk.css",
+    "static/js/2.c2d47cdd.chunk.js",
+    "static/css/main.a036ed4d.chunk.css",
+    "static/js/main.bece17ec.chunk.js"
   ]
 }
