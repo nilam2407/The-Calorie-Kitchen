@@ -1,4 +1,71 @@
-.row-header{
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #0c0b09;
+  color: #fff;
+}
+
+a {
+  color:white;
+}
+
+a:hover {
+  color: #d9ba85;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+
+
+
+.section-title {
+  padding-bottom: 40px;
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+
+
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 4px 10px;
+}
+
+.section-title p {
+  margin: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: #cda45e;
+}
+
+
+
+
+
+
+
+/* .row-header{
     margin:0px auto;
     padding:0px auto;
 }
@@ -10,11 +77,6 @@
     min-height:400px;
 }
 
-.footer{
-    background-color: #D1C4E9;
-    margin:0px auto;
-    padding: 20px 0px 20px 0px;
-}
 .jumbotron {
     padding:70px 30px 70px 30px;
     margin:0px auto;
@@ -25,11 +87,10 @@ address{
     font-size:80%;
     margin:0px;
     color:#0f0f0f;
-}
+} */
 
-.navbar-dark {
-    background-color: #512DA8;
-}
+
+
 
 .page-enter{
     opacity: 0.01;
@@ -51,3 +112,153 @@ address{
     transform: translate(100%);
     transition: all 300ms ease-out;
 }
+
+.media-img{
+    height: 150px;
+    width: 150px;
+}
+
+.HeroContainer{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.322), rgba(0, 0, 0, 0.1));
+  background-image: url('https://www.madrascurryhouse.ca/wp-content/uploads/2017/06/indian-spices.jpg');
+  height: 100vh;
+  background-position:center;
+  position: relative;
+  background-size: cover;
+}
+
+.HeroContent{
+    height: calc(100vh - 80px);
+    max-height: 100%;
+    padding: 0rem calc((100vw - 1300px) / 2);
+}
+
+.HeroItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    max-height: 100%;
+    padding: 0 2rem;
+    width: 650px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: bold;
+    @media screen and (max-width: 650px) {
+      width: 100%;
+    }
+}
+
+
+.HeroH1 {
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    margin-bottom: 1rem;
+    box-shadow: 3px 5px#d9ba85;
+    letter-spacing: 3px;
+    font-family: "Poppins",sans-serif;
+}
+
+.HeroH1 span{
+    color:#d9ba85;
+}
+.HeroBtn{
+    font-size: 1.4rem;
+    padding: 1rem 4rem;
+    border: 2px solid #cda45e;
+    border-radius: 50px;
+    color: #fff;
+    transition: 0.2s ease-out;
+    margin-top: 40px;
+}
+
+.HeroBtn:hover{
+     background: #cda45e;
+     color: #fff;
+}
+
+
+.events {
+    background: center center no-repeat;
+    background-image: url("https://wallpapercave.com/wp/wp1874159.jpg");
+    background-size: cover;
+    position: relative;
+    padding:60px;
+  }
+
+  .events::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .events .section-title h2 {
+    color: #fff;
+  }
+
+  .events .container {
+    position: relative;
+  }
+
+  @media (min-width: 1024px) {
+    .events {
+      background-attachment: fixed;
+    }
+  }
+
+  .events .events-carousel {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 30px;
+  }
+
+  .events .event-item h3 {
+    font-weight: 600;
+    font-size: 26px;
+    color: #cda45e;
+  }
+  
+  .events .event-item .price {
+    font-size: 26px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color:white;
+  }
+  
+  .events .event-item .price span {
+    border-bottom: 2px solid #cda45e;
+  }
+
+  .events .event-item{
+      color:white;
+  }
+
+  .events .owl-nav, .events .owl-dots {
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .events .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd !important;
+  }
+  
+  .events .owl-dot.active {
+    background-color: #cda45e !important;
+  }
+  
+  @media (min-width: 992px) {
+    .events .testimonial-item p {
+      width: 80%;
+    }
+  }
+

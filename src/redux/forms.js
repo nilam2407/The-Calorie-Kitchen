@@ -1,10 +1,24 @@
+
+import * as ActionTypes from './ActionTypes';
+
 export const InitialFeedback = {
-    firstname: '',
-    lastname: '',
-    telnum: '',
+    name :'',
     email: '',
-    agree:false,
-    contactType : 'Tel.',
-    message: ''
+    subject:'',
+    message: '',
+    
 
 };
+
+
+export const feedback = (state= InitialFeedback, action) => {
+    switch(action.type){
+        case ActionTypes.FEEDBACK:
+            return{
+                ...state,
+                success:"Here you are"
+            };
+        default:
+            return state;
+    }
+}

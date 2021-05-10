@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.footer{
+    background: black;
+    padding: 0 0 30px 0;
+    color: #fff;
+    font-size: 14px;
+
+}
+
+.footer-top{
+    background: #0c0b09;
+    border-top: 1px solid #37332a;
+    border-bottom: 1px solid #28251f;
+    padding: 60px 0 30px 0;
+}
+
+
+
+.foooter-info a{
+    color: white;
+}
+
+.footer-links h5{
+    margin-bottom: 30px;
+  }
+  
+ .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+ i{
+    padding-right: 8px;
+    color: #cda45e;
+    font-size: 18px;
+    line-height: 1;
+  }
+  
+  
+  .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+ .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  .footer-links ul a {
+    color: #fff;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  .footer-top .footer-links ul a:hover {
+    color: #cda45e;
+  }
+
+  .footer-info h5{
+    margin-bottom: 30px;
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+  }
+ 
+
+/* .btn.btn-rounded {
+    border-radius: 50px
+}
+
+.btn-outline-facebook {
+    border: 1px solid black;
+    color:black;
+}
+
+.btn-outline-facebook:hover {
+    background:#cda45e;
+    color: #ffffff;
+}
+
+.btn.btn-social-icon {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+.btn.btn-facebook {
+    background:black;
+    color:#ffffff;
+}
+
+.btn-facebook:hover {
+    background:#cda45e;
+    
+} */
+
+.social-links{
+    text-decoration: none;
+}
+
+.footer .footer-top .social-links a i {
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    background: #28251f;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  .footer .footer-top .social-links i:hover {
+    background: #cda45e;
+    color: #fff;
+    text-decoration: none;
+  }
+

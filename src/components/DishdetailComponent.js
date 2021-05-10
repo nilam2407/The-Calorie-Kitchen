@@ -3,7 +3,6 @@ import { Card, CardImg, CardText, CardBody, CardTitle,Breadcrumb,BreadcrumbItem,
 import {Link} from 'react-router-dom';
 import{ Control,LocalForm, Errors} from 'react-redux-form';
 import {Loading} from './LoadingComponent';
-import {baseUrl} from '../shared/baseUrl';
 import {FadeTransform, Fade, Stagger} from 'react-animation-components';
 const required =(val) => val && val.length;
 const maxLength=(len) =>(val) => !(val) ||(val.length <= len);
@@ -27,7 +26,7 @@ class CommentForm extends Component{
     
 
             handleSubmit(values){
-                this.props.postComment(this.props.disId, values.rating,values.name,values.comment);
+                this.props.postComment(this.props.dishId, values.rating,values.name,values.comment);
                 console.log('current state is : '+ JSON.stringify(values));
                 alert('current state is :' +JSON.stringify(values));
             }
@@ -36,10 +35,10 @@ class CommentForm extends Component{
     return(
         <div>
         <Button  color="light" onClick = {this.toggleModal}> 
-        <span className ="fa fa-edit fa-lg"git p></span>
+        <span className ="fa fa-edit fa-lg"></span>
              Submit Comment</Button>
         <Modal isOpen ={this.state.isModalOpen} toggle={this.toggleModal}>
-                <ModalHeader toggle ={ this.toggleModal}>
+                <ModalHeader toggle ={this.toggleModal}>
                     Submit Comment</ModalHeader>
                 <ModalBody>
                   <LocalForm onSubmit ={(values) => this.handleSubmit(values)}>
@@ -120,7 +119,7 @@ function RenderDish({dish}) {
             exitTransform: 'scale(0.5) translateY(-50%)'  
 }}>
          <Card>
-             <CardImg width="100%" src={baseUrl + dish.image} alt={dish.name}/>
+             <CardImg width="100%" src={dish.image} alt={dish.name}/>
              <CardBody>
              <CardTitle>
                  {dish.name}

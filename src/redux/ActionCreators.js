@@ -1,5 +1,4 @@
 import * as ActionTypes from './ActionTypes';
-import {DISHES} from "../shared/dishes";
 import {baseUrl} from "../shared/baseUrl";
 
 
@@ -221,14 +220,11 @@ export const fetchleaders = () => (dispatch) => {
     });
 
 
-export const postFeedback = (firstname, lastname, telnum, email, agree,contactType,message) => (dispatch) => {
+export const postFeedback = (name, email, subject, message) => (dispatch) => {
         const newFeedback ={
-            firstname : firstname,
-            lastname : lastname,
-            telnum : telnum,
+            name : name,
             email : email,
-            agree : agree,
-            contactType : contactType,
+            subject :subject,
             message : message
         };
         newFeedback.date = new Date().toISOString ();
@@ -254,10 +250,14 @@ export const postFeedback = (firstname, lastname, telnum, email, agree,contactTy
             throw error;
         })
         .then(response => response.json())
-        .then(response => alert("thank you" + JSON.stringify(response)))
+        .then(response => dispatch(feedback(response)))
         .catch(error => {console.log('Post Feedback', error.message);
             alert('your Feedback could not be posted on server' + error.message);
     });
     
 };
 
+export const feedback =(feedback) => ({
+    type: ActionTypes.FEEDBACK,
+    payload:feedback
+})

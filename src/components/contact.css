@@ -1,0 +1,90 @@
+.contact {
+    background-image: url("https://raresantorini.com/wp-content/uploads/2018/06/black-table-background-1.jpg");
+    background-size: cover;
+    position: relative;
+    padding: 80px 0;
+}
+
+.contact .info {
+    width: 100%;
+  }
+  
+  .contact .info i {
+    font-size: 25px;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #cda45e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    color:white;
+  }
+  
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #bab3a6;
+  }
+  
+  .contact .info .open-hours, .contact .info .email, .contact .info .phone {
+    margin-top: 40px;
+  }
+
+  .contact .email-form {
+    width: 100%;
+  }
+  
+  .contact .email-form .form-group {
+    padding-bottom: 8px;
+  }
+  
+  .contact .email-form input, .contact .email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    background:rgba(8, 8, 6, 0.808);
+    border-color: #625b4b;
+    color: white;
+  }
+  
+  .contact .email-form input::-webkit-input-placeholder, .contact .email-form textarea::-webkit-input-placeholder {
+    color: #a49b89;
+  }
+
+  .contact .email-form input {
+    height: 44px;
+  }
+  
+  .contact .email-form textarea {
+    padding: 10px 12px;
+  }
+  
+  .contact .email-form button[type="submit"] {
+    background: #cda45e;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  
+  .contact .email-form button[type="submit"]:hover {
+    background: #d3af71;
+  }
+
+  .contact .email-form input:focus, .contact .email-form textarea:focus
+   {
+    border-color: #cda45e;
+  }

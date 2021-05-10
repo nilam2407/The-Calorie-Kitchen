@@ -31,7 +31,7 @@ import {TransitionGroup,CSSTransition} from 'react-transition-group';
       fetchComments: () => {dispatch(fetchComments())},
       fetchPromos: () => {dispatch(fetchPromos())},
       fetchleaders: () => {dispatch(fetchleaders())},
-      postFeedback : (firstname, lastname,telnum,email,agree,contactType,message) => dispatch(postFeedback(firstname, lastname,telnum,email,agree,contactType,message))
+      postFeedback : (name,email,subject,message,success) => dispatch(postFeedback(name,email,subject,message,success))
     });
 
   //dispatch (addcommnet()) recive a updated action object to sent to store.which will update state. this dispatch function will be used
@@ -85,6 +85,8 @@ class Main extends Component {
         );
       
     };
+
+
   return (
     <div>
       <Header/>

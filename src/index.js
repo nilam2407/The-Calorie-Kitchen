@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap-social/bootstrap-social.css';
+// import 'react-owl-carousel2/style.css'; //Allows for server-side rendering.
+// import 'owl.carousel/dist/assets/owl.carousel.min.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';

@@ -1,0 +1,97 @@
+
+
+
+.logo {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+  }
+  
+.logo a {
+    color: #fff;
+  }
+
+
+
+.navbar-dark {
+    background: rgba(12, 11, 9, 0.6);
+    text-align: none;
+    text-decoration: none;
+    margin: 0;
+    
+}
+
+
+.ulelement{
+    /* padding-right:30px;
+    text-decoration: none;
+    margin-top: 10px; */
+    
+    margin:0;
+    padding:0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.ulelement .link {
+    display: block;
+    position: relative;
+    transition: 0.3s;
+    font-size: 18px;
+    font-family:sans-serif;
+    position: relative;
+    white-space: nowrap;
+    padding-left: 28px;
+    color: white;
+    
+   
+}
+
+.ulelement .link:hover{
+    color: #cda45e;
+}
+
+.ulelement .link.active{
+    color: #d9ba85;
+}
+
+.ulelement .link.last{
+    margin-right: 70px;
+}
+
+
+ .book-a-table{
+    border: 2px solid #cda45e;
+    border-radius: 50px;
+    padding: 8px 25px;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    color:white;
+  
+    
+}
+
+.btnhover{
+    display: block;
+    color:white;
+    text-decoration: none;
+}
+.book-a-table:hover{
+    background: #cda45e;
+    color: #fff;
+}
+
+.btnhover:hover{
+    color:white;
+    text-decoration: none;
+}
+
+
